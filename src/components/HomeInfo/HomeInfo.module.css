@@ -1,0 +1,52 @@
+.homeInfo {
+    padding: 40px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.homeInfoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.solarSystemInfo,
+.websiteInfo {
+    margin: 30px;
+}
+
+.homeInfo h2 {
+    padding-bottom: 20px;
+    border-bottom: solid rgb(114, 60, 27);
+}
+
+span {
+    font-weight: bold;
+}
+
+.homeInfo p {
+    padding-bottom: 20px;
+    border-bottom: solid rgb(114, 60, 27);
+    
+}
+
+.readMore {
+    border-radius: 20px;
+    transition: 300ms;
+    background-color: rgb(43, 31, 180);
+    border: 2px solid rgb(43, 31, 180);
+}
+
+.readMore:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (min-width: 769px) {
+    
+    .homeInfoContainer {
+        flex-direction:row
+    }
+}

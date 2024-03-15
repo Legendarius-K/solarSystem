@@ -1,0 +1,30 @@
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+
+
+.nav img {
+    height: 70%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid white; */
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu img,
+.menu h3 {
+    margin: 5px;
+}
+

@@ -1,0 +1,90 @@
+.hero {
+    background-image: url("../../assets/images/heroSpace.png");
+    background-size: cover;
+    height: 30%;
+    max-height: 650px;
+    min-height: 300px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.arrowCircle {
+    aspect-ratio: 1/1;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -50px;
+    max-width: 115px;
+}
+
+.innerCircle {
+    aspect-ratio: 1/1;
+    width: 85%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 550px) {
+    
+    .arrowCircle {
+        width: 17%;
+        bottom: -58px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    
+    .arrowCircle {
+        width: 14%;
+        bottom: -68px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
