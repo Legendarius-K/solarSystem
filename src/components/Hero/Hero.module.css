@@ -34,6 +34,7 @@ h2 {
     position: absolute;
     bottom: -50px;
     max-width: 115px;
+    
 }
 
 .innerCircle {
@@ -44,7 +45,20 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
+     transition: 300ms;
 }
+
+.innerCircle:hover {
+    border-left: 2px solid rgb(32, 12, 255);
+    border-right: 2px solid rgb(32, 12, 255);
+}
+.innerCircle:hover .arrowCircle {
+    border-top: 1px solid rgb(32, 12, 255);
+    
+}
+
+
 
 @media screen and (min-width: 550px) {
     
@@ -76,6 +90,10 @@ h2 {
     .hero h1 {
         font-size: 3rem;
     }
+
+   
+
+    
 }
 
 @media screen and (min-width: 1025px) {
