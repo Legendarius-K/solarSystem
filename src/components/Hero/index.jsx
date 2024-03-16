@@ -1,7 +1,7 @@
 import styles from './Hero.module.css'
 import arrow from '../../assets/images/downarrow.png'
 
-const Hero = () => {
+const Hero = ({headline, subheadline}) => {
     return (
         <div className={styles.hero}>
             <h1>Hubble Space Telescope</h1>

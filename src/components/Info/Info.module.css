@@ -3,5 +3,25 @@
 }
 
 .websiteInfo {
-    
+
+}
+
+.solarSystemInfo,
+.websiteInfo {
+    margin: 0px;
+    text-align: start;
+}
+
+.solarSystemInfo h2,
+.websiteInfo h2 {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .solarSystemInfo,
+    .websiteInfo {
+    margin: 30px;
+}
 }

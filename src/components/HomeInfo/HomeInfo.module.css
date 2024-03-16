@@ -1,5 +1,5 @@
 .homeInfo {
-    padding: 40px;
+    padding: 60px 40px;
     background-color: white;
     color: black;
     text-align: center;
@@ -10,11 +10,6 @@
 .homeInfoContainer {
     display: flex;
     flex-direction: column;
-}
-
-.solarSystemInfo,
-.websiteInfo {
-    margin: 30px;
 }
 
 .homeInfo h2 {

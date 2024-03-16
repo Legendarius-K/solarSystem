@@ -34,10 +34,10 @@ h2 {
     position: absolute;
     bottom: -50px;
     max-width: 115px;
-    
 }
 
 .innerCircle {
+    box-sizing: content-box;
     aspect-ratio: 1/1;
     width: 85%;
     background-color: white;
@@ -45,18 +45,20 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-     transition: 300ms;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 400ms;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+    background-image: url("../../assets/images/moon.jpg");
+    background-size: cover;
 }
 
 .innerCircle:hover {
-    border-left: 2px solid rgb(32, 12, 255);
-    border-right: 2px solid rgb(32, 12, 255);
-}
-.innerCircle:hover .arrowCircle {
-    border-top: 1px solid rgb(32, 12, 255);
+    border-left: 3px solid rgb(32, 12, 255);
+    border-right: 3px solid rgb(32, 12, 255);
     
+    /* background: linear-gradient(to bottom, rgb(82, 82, 236), rgb(199, 195, 219), rgb(246, 246, 250), white); */
 }
+
 
 
 
