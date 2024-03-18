@@ -1,11 +1,13 @@
 import styles from './Hero.module.css'
 import arrow from '../../assets/images/downarrow.png'
 
-const Hero = ({headline, subheadline}) => {
+const Hero = ({headline, subheadline, heroClass}) => {
+
+
     return (
-        <div className={styles.hero}>
-            <h1>Hubble Space Telescope</h1>
-            <h2>Embark on a Journey of Discovery</h2>
+        <div className={`${styles.hero} ${styles[heroClass]}`}>
+            <h1>{headline}</h1>
+            <h2>{subheadline}</h2>
             <div className={styles.arrowCircle}>
                 <div className={styles.innerCircle}>
                     <img src={arrow} alt="downarrow" width="30px" height="30px" />
@@ -16,3 +18,4 @@ const Hero = ({headline, subheadline}) => {
 };
 
 export default Hero
+

@@ -5,11 +5,9 @@ import HomeInfo from '../HomeInfo';
 const Homepage = () => {
     return (
         <>
-            <Hero headline="Hubble Space Telescope" subheadline="Embark on a Journey of Discovery" />
+            <Hero headline="Hubble Space Telescope" subheadline="Embark on a Journey of Discovery" heroClass="heroHome" />
             <HomeInfo />
         </>
-
-        
     )
 };
 

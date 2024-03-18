@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("../../assets/images/heroSpace.png");
+    
     background-size: cover;
     height: 30%;
     max-height: 650px;
@@ -10,6 +10,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.heroHome {
+    background-image: url("../../assets/images/heroSpace.png");
 }
 
 .hero h1 {
@@ -34,6 +38,7 @@ h2 {
     position: absolute;
     bottom: -50px;
     max-width: 115px;
+    cursor: pointer;
 }
 
 .innerCircle {
