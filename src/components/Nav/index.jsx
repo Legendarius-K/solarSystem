@@ -22,8 +22,7 @@ const Nav = ({backHome, changePage}) => {
             <img onClick={handleClick} className={styles.nasaLogo} src={nasaLogo} alt="Space image" />
             <div onClick={toggleHamburger} className={styles.menu}>
                 <img src={hamburger} alt="hamburger" width="22px" height="22px" />
-                <h3>Menu
-                </h3>
+                <h3>Menu</h3>
             </div>
             { hamburgerOpen && <Hamburger changePage={changePage} closeHamburger={setHamburgerOpen} /> }
         </nav>
@@ -31,3 +30,4 @@ const Nav = ({backHome, changePage}) => {
 };
 
 export default Nav
+ 

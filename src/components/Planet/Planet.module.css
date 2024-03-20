@@ -1,16 +1,54 @@
 .planet {
     font-size: 0.9rem;
-    padding: 24px;
+    
 }
 
 .planet h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: capitalize;
     font-family: "Tilt Warp";
+    color: rgb(1, 23, 102);
+    text-align: center;
+    margin: 15px;
+}
+
+.planetImg {
+    width: 100%;
+}
+
+.planetFlex {
+    display: flex;
+}
+
+.planetDescription p {
+    border-top: 1px solid rgb(87, 78, 59);
+    border-bottom: 1px solid rgb(87, 78, 59);
+    padding: 15px 0;
+    padding: 10px 24px;
 }
 
 .planetInfo {
+    min-width: 350px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    margin: 20px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 
+.planetInfo span {
+    color: rgb(151, 165, 214);
+    font-size: 0.9rem;
+}
+
+.planetInfo p {
+    font-size: 0.8rem;
+}
+
+.planetInfo,
+.planetDescription {
+    
 }
 
 .mercury {
@@ -46,5 +84,17 @@
 }
 
 .pluto {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .planetFlex {
+        flex-direction: column;
+    }
+
+    .planetInfo {
+        margin-top: unset;
+    }
 
 }
