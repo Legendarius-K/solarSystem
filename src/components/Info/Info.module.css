@@ -10,11 +10,14 @@
 .websiteInfo {
     margin: 0px;
     text-align: start;
+    line-height: 1.7;
 }
 
 .solarSystemInfo h2,
 .websiteInfo h2 {
     text-align: center;
+    font-family: "Tilt Warp";
+    font-weight: 100;
 }
 
 

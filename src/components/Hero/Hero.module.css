@@ -1,5 +1,5 @@
 .hero {
-    
+    color: white;
     background-size: cover;
     height: 30%;
     max-height: 650px;
@@ -16,15 +16,22 @@
     background-image: url("../../assets/images/heroSpace.png");
 }
 
+.heroSolarSystem {
+    background-image: url("../../assets/images/solar-system-hero.jpeg");
+}
+
 .hero h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: 900;
+    font-family: "Tilt Warp";
+    opacity: 80%;
 }
 
 h2 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
+    opacity: 80%;
 }
 
 .arrowCircle {

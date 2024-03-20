@@ -1,0 +1,14 @@
+.readMore {
+    padding: 7px 20px;
+    color: white;
+    font-family: "Tilt Warp";
+    border-radius: 20px;
+    transition: 300ms;
+    background-color: rgb(43, 31, 180);
+    border: 2px solid rgb(43, 31, 180);
+}
+
+.readMore:hover {
+    background-color: white;
+    color: black;
+}

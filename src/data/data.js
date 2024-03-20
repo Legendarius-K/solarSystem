@@ -1,4 +1,5 @@
-function Planet (order, distanceFromSun, size, composition, maxTemperature, minTemperature, gravity, info, image) {
+function Planet (name, order, distanceFromSun, size, composition, maxTemperature, minTemperature, gravity, info, image) {
+    this.name = name;
     this.order = order;
     this.distanceFromSun = distanceFromSun;
     this.size = size;
@@ -10,7 +11,8 @@ function Planet (order, distanceFromSun, size, composition, maxTemperature, minT
     this.image = image
 }
 
-let mercury = new Planet (
+export let mercury = new Planet (
+    "mercury",
     "Closest to the sun",
     "57.9 million kilometers (average)",
     "4,880 kilometers",
@@ -22,7 +24,8 @@ let mercury = new Planet (
     "mercury.jpg"
 )
 
-let venus = new Planet (
+export let venus = new Planet (
+    "venus",
     "Second planet from the Sun",
     "108.2 million kilometers (average)",
     "12,104 kilometers",
@@ -34,7 +37,8 @@ let venus = new Planet (
     "venus.jpg"
 )
 
-let earth = new Planet (
+export let earth = new Planet (
+    "earth",
     "Third planet from the Sun",
     "149.6 million kilometers (average)",
     "12,742 kilometers",
@@ -46,7 +50,8 @@ let earth = new Planet (
     "earth.jpg"
 )
 
-let mars = new Planet (
+export let mars = new Planet (
+    "mars",
     "Fourth planet from the Sun",
     "227.9 million kilometers (average)",
     "6,779 kilometers",
@@ -58,7 +63,8 @@ let mars = new Planet (
     "mars.jpg"
 )
 
-let jupiter = new Planet (
+export let jupiter = new Planet (
+    "jupiter",
     "Fifth planet from the Sun",
     "778.6 million kilometers (average)",
     "139,822 kilometers",
@@ -70,7 +76,8 @@ let jupiter = new Planet (
     "jupiter.jpg"
 )
 
-let saturn = new Planet (
+export let saturn = new Planet (
+    "saturn",
     "Sixth planet from the Sun",
     "1.4 billion kilometers (average)",
     "116,464 kilometers",
@@ -82,7 +89,8 @@ let saturn = new Planet (
     "saturn.jpg"
 )
 
-let uranus = new Planet (
+export let uranus = new Planet (
+    "uranus",
     "Seventh planet from the Sun",
     "2.9 billion kilometers (average)",
     "50,724 kilometers",
@@ -94,7 +102,8 @@ let uranus = new Planet (
     "uranus.jpg"
 )
 
-let neptune = new Planet (
+export let neptune = new Planet (
+    "neptune",
     "Eighth planet from the Sun",
     "4.5 billion kilometers (average)",
     "49,244 kilometers",
@@ -106,7 +115,8 @@ let neptune = new Planet (
     "neptune.jpg"
 )
 
-let pluto = new Planet (
+export let pluto = new Planet (
+    "pluto",
     "Dwarf planet in the Kuiper Belt",
     "5.9 billion kilometers (average)",
     "2,377 kilometers",

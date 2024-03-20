@@ -27,18 +27,6 @@ span {
     
 }
 
-.readMore {
-    border-radius: 20px;
-    transition: 300ms;
-    background-color: rgb(43, 31, 180);
-    border: 2px solid rgb(43, 31, 180);
-}
-
-.readMore:hover {
-    background-color: white;
-    color: black;
-}
-
 @media screen and (min-width: 769px) {
     
     .homeInfoContainer {

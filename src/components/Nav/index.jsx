@@ -1,15 +1,31 @@
 import styles from './Nav.module.css'
 import nasaLogo from "../../assets/images/hs-logo-nasa.png"
 import hamburger from "../../assets/images/hamburger-menu.png"
+import Hamburger from '../Hamburger';
+import { useState } from 'react';
 
-const Nav = () => {
+const Nav = ({backHome, changePage}) => {
+
+    const [hamburgerOpen, setHamburgerOpen] = useState(false)
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen)
+    }
+
+    const handleClick = () => {
+        backHome()
+        setHamburgerOpen(false)
+    }
+
     return (
         <nav className={styles.nav}>
-            <img src={nasaLogo} alt="Space image" />
-            <div className={styles.menu}>
+            <img onClick={handleClick} className={styles.nasaLogo} src={nasaLogo} alt="Space image" />
+            <div onClick={toggleHamburger} className={styles.menu}>
                 <img src={hamburger} alt="hamburger" width="22px" height="22px" />
-                <h3>MENU</h3>
+                <h3>Menu
+                </h3>
             </div>
+            { hamburgerOpen && <Hamburger changePage={changePage} closeHamburger={setHamburgerOpen} /> }
         </nav>
     )
 };

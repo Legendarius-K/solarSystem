@@ -1,0 +1,61 @@
+.hamburger {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: rgba(31, 53, 135, 0.4);
+    height: 100vh;
+    padding: 15px 80px 0 0;
+    top: 60px;
+    right: 0;
+    backdrop-filter: blur(5px);
+    transition: 400ms;
+    box-shadow: rgba(0, 0, 0, 1) -10px 22px 70px 15px;
+}
+
+.hamburger li {
+    list-style: none;
+    margin: 10px;
+    transition: 400ms;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger li::after {
+    content: "";
+    border-bottom: 2px solid rgb(224, 224, 224);
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 0; /* Initially set width to 0 */
+    position: absolute;
+    bottom: 0;
+    left: -10px; /* Start from left */
+    transition: width 0.3s ease; /* Apply transition to width property */
+    margin: -1px;
+}
+
+.hamburger li:hover::after {
+    width: 130%; /* Increase width to 100% on hover */
+}
+
+.hamburger li:hover {
+    color: rgb(207, 198, 241);
+}
+
+
+
+/* .hamburger li:hover::after {
+    content: "";
+    border-bottom: 2px solid white ;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+
+
+
+/* .hamburger li:hover {
+    border-bottom: 2px solid white;
+    margin: 8px;
+} */

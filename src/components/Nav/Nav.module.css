@@ -1,11 +1,14 @@
 .nav {
     height: 60px;
     width: 100%;
+    font-family: "Tilt Warp";
     background-color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3%;
+    /* position: relative; */
 }
 
 
@@ -26,5 +29,9 @@
 .menu img,
 .menu h3 {
     margin: 5px;
+}
+
+.nasaLogo {
+    cursor: pointer;
 }
 
