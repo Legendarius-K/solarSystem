@@ -12,7 +12,7 @@ const Hamburger = ({changePage, closeHamburger}) => {
             <ul className={styles.hamburgerUl}>
                 <li onClick={() => handleClick(null)}>Home</li>
                 <li onClick={() => handleClick("solarSystem")}>Our Solar System</li>
-                <li onClick={() => handleClick("planetsOverview")}>Planets Overview</li>
+                <li onClick={() => handleClick("allPlanets")}>All Planets</li>
                 <li onClick={() => handleClick("mercury")}>Mercury</li>
                 <li onClick={() => handleClick("venus")}>Venus</li>
                 <li onClick={() => handleClick("earth")}>Earth</li>

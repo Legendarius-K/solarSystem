@@ -4,19 +4,28 @@ import Nav from './components/Nav'
 import Homepage from './components/Homepage'
 import SolarSystem from './components/SolarSystem'
 import Planet from './components/Planet'
+import AllPlanets from './components/AllPlanets'
 import { planets } from './data/data'
 import { mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto } from './data/data'
 import './App.css'
 
+// const PlanetsArray = {
+//     mercury: mercury,
+//     venus: venus,
+//     earth: earth,
+//     mars: mars,
+// }
+
 function App() {
 
   const [pageView, setPageView] = useState(null)
-
+console.log(pageView);
   return (
     <>
       <Nav backHome={setPageView} changePage={setPageView}/>
       { !pageView && <Homepage solarSystemToggle={setPageView}/> }
       { pageView === "solarSystem" && <SolarSystem solarSystemToggle={setPageView}/> }
+      { pageView === "allPlanets" && <AllPlanets /> }
       { pageView === "mercury" && <Planet {...mercury}/>}
       { pageView === "venus" && <Planet {...venus}/>}
       { pageView === "earth" && <Planet {...earth}/>}

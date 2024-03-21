@@ -20,7 +20,7 @@ export let mercury = new Planet (
     "430 degrees Celsius",
     "-180 degrees Celsius",
     "38% of Earth's surface gravity",
-    "Mercury, the closest planet to the Sun in our solar system, is a fascinating world of extremes. With a diameter of about 4,880 kilometers (3,032 miles), it is the smallest of the eight planets. Its surface is scarred with numerous impact craters, evidence of its turbulent history of collisions with asteroids and comets. Despite its diminutive size, Mercury boasts some remarkable features. One of the most striking characteristics of Mercury is its extreme temperature variations. Due to its lack of atmosphere and proximity to the Sun, temperatures on its sunlit side can soar to a blistering 430 degrees Celsius (800 degrees Fahrenheit), hot enough to melt lead. However, on its dark side, facing away from the Sun, temperatures plummet to around -180 degrees Celsius (-290 degrees Fahrenheit). Mercury's surface is predominantly rocky and heavily cratered, resembling Earth's Moon in many ways. It also has long, steep cliffs known as scarps, which are thought to have formed as the planet's interior cooled and contracted, causing the crust to shrink and fracture. Despite its proximity to the Sun, Mercury has a surprisingly thin atmosphere, composed mainly of oxygen, sodium, hydrogen, helium, and potassium. This thin atmosphere provides little protection from the Sun's intense radiation and solar winds. Mercury's surface gravity is about 38% of Earth's, meaning that objects weigh less on Mercury than they do on Earth. This low gravity, combined with its proximity to the Sun, makes Mercury a challenging destination for exploration. Nevertheless, missions like NASA's MESSENGER spacecraft have provided valuable insights into this enigmatic world, revealing a planet of extremes and mysteries waiting to be uncovered.",
+    "Mercury, the closest planet to the Sun, is a scorched world with extreme temperatures ranging from blistering hot to freezing cold. Its surface is heavily cratered, resembling the Moon, and it has a thin atmosphere unable to retain heat. Despite its small size, Mercury boasts surprising geological features, including cliffs and ridges formed by tectonic activity. Its slow rotation leads to long, scorching days and frigid nights. Despite challenges, Mercury's proximity to the Sun makes it an enticing target for exploration, offering insights into the early solar system and potential resources for future space missions.",
     "mercury.jpg"
 )
 
@@ -33,7 +33,7 @@ export let venus = new Planet (
     "462 degrees Celsius",
     "462 degrees Celsius",
     "90% of Earth's surface gravity",
-    "Venus, often called Earth's sister planet due to their similar size and composition, is shrouded in mystery beneath its thick, toxic atmosphere. Its surface is marked by volcanoes, vast plains, and highlands, with temperatures soaring high enough to melt lead. Venus's dense atmosphere traps heat, leading to a runaway greenhouse effect and making it the hottest planet in our solar system. Despite its inhospitable conditions, Venus remains an object of fascination and exploration.",
+    "Often called Earth's sister planet due to their similar size and composition, Venus is shrouded in mystery beneath its thick, toxic atmosphere. Its surface is marked by volcanoes, vast plains, and highlands, with temperatures soaring high enough to melt lead. Venus's dense atmosphere traps heat, leading to a runaway greenhouse effect and making it the hottest planet in our solar system. Despite its inhospitable conditions, Venus remains an object of fascination and exploration, with missions uncovering more about its complex geology and atmosphere, providing clues to understanding Earth's climate history.",
     "venus.jpg"
 )
 
@@ -46,7 +46,7 @@ export let earth = new Planet (
     "58 degrees Celsius",
     "-89 degrees Celsius",
     "100% of Earth's surface gravity",
-    "Earth, our home planet, is a vibrant and diverse world teeming with life. From the depths of the oceans to the heights of the mountains, Earth's landscapes are shaped by a combination of geological processes and the influence of living organisms. Its atmosphere provides a protective blanket, regulating temperature and shielding life from harmful cosmic radiation. With its unique blend of land, water, and atmosphere, Earth stands out as a precious oasis of life in the vastness of space.",
+    "Earth, the only known planet to support life, is a vibrant oasis in the vastness of space. Its diverse ecosystems, ranging from lush forests to barren deserts, sustain a rich tapestry of biodiversity. With vast oceans covering over 70% of its surface, Earth is a dynamic world shaped by geological forces and teeming with life. Its atmosphere, composed mainly of nitrogen and oxygen, provides the essential conditions for life to thrive. From towering mountains to deep ocean trenches, Earth's varied landscapes offer endless opportunities for exploration and discovery, making it a precious gem in the cosmos.",
     "earth.jpg"
 )
 
@@ -59,7 +59,7 @@ export let mars = new Planet (
     "20 degrees Celsius",
     "-153 degrees Celsius",
     "38% of Earth's surface gravity",
-    "Mars, often called the 'Red Planet' due to its reddish appearance, has long fascinated humanity with its potential for harboring life. Its surface bears the scars of ancient rivers and valleys, hinting at a warmer, wetter past. Today, Mars is a cold and barren world, with a thin atmosphere unable to support liquid water on its surface. Nevertheless, exploration missions continue to search for signs of past or present life on this enigmatic planet.",
+    "Mars, often called the Red Planet, has long captivated the human imagination with its rusty hue and potential for harboring life. Its surface is marked by ancient river valleys, towering volcanoes, and vast deserts dusted with iron oxide. Evidence suggests Mars once had liquid water, raising questions about its past habitability. Today, Mars is a cold, barren world with a thin atmosphere, posing challenges for future exploration and colonization. Despite its harsh conditions, Mars remains a focal point for scientific research and exploration, with ongoing missions uncovering its secrets and paving the way for human exploration.",
     "mars.jpg"
 )
 
@@ -72,7 +72,7 @@ export let jupiter = new Planet (
     "-145 degrees Celsius",
     "-145 degrees Celsius",
     "254% of Earth's surface gravity",
-    "Jupiter, the largest planet in our solar system, is a gas giant with a mesmerizing array of swirling clouds and storms. Its colossal size and strong magnetic field make it a dominant force in the solar system. Jupiter's moons, particularly the Galilean moons, are of particular interest for exploration due to their potential for harboring life or revealing insights into the planet's formation and evolution.",
+    "Jupiter, the largest planet in our solar system, reigns as a gas giant with swirling clouds of hydrogen and helium. Its immense size and mass dominate the solar system, shaping the orbits of nearby planets and asteroids. Jupiter's iconic Great Red Spot, a massive storm larger than Earth, is a testament to its turbulent atmosphere. Beyond its clouds lie layers of metallic hydrogen, creating a magnetic field thousands of times stronger than Earth's. Jupiter's moons, including Europa and Io, offer tantalizing targets for exploration, with potential for hidden oceans and volcanic activity, sparking curiosity about this majestic giant.",
     "jupiter.jpg"
 )
 
@@ -85,7 +85,7 @@ export let saturn = new Planet (
     "-178 degrees Celsius",
     "-178 degrees Celsius",
     "107% of Earth's surface gravity",
-    "Saturn, famous for its majestic rings, is a gas giant that captivates observers with its beauty. Its ring system, composed of countless icy particles, is one of the most iconic features in our solar system. Saturn's moons, particularly Titan, hold valuable clues to understanding the conditions that existed in the early solar system and the potential for life beyond Earth.",
+    "Saturn, adorned with majestic rings, is a jewel of the solar system, captivating observers with its beauty and mystery. Its rings, composed of ice and rock particles, stretch thousands of kilometers into space, creating a stunning celestial display. Beneath its rings lies a world of swirling clouds and storms, with a distinctive hexagonal pattern at its north pole. Saturn's moons, such as Titan and Enceladus, hold secrets of their own, with potential for liquid oceans and organic molecules, raising questions about the origins of life. Saturn's allure continues to inspire exploration and discovery, unlocking the secrets of our cosmic neighborhood.",
     "saturn.jpg"
 )
 
@@ -98,7 +98,7 @@ export let uranus = new Planet (
     "-224 degrees Celsius",
     "-224 degrees Celsius",
     "89% of Earth's surface gravity",
-    "Uranus, the seventh planet from the Sun, is an ice giant with a peculiar feature: it rotates on its side. Its axis of rotation is nearly parallel to its orbital plane, giving it extreme seasonal variations. Uranus has a system of faint rings and a retinue of moons, but its distant location makes it a challenging target for exploration.",
+    "Uranus, the icy giant, spins on its side, presenting a unique and enigmatic profile in the solar system. Its pale blue coloration comes from methane in its atmosphere, masking the swirling storms below. Uranus's extreme axial tilt results in dramatic seasonal changes, with each pole experiencing decades-long periods of sunlight and darkness. Despite its distant location, Uranus has a system of rings and moons, including Miranda and Ariel, which offer insights into the planet's turbulent history. Uranus remains a mysterious world, beckoning further exploration to unravel its secrets and shed light on the formation of our solar system.",
     "uranus.jpg"
 )
 
@@ -111,7 +111,7 @@ export let neptune = new Planet (
     "-201 degrees Celsius",
     "-201 degrees Celsius",
     "112% of Earth's surface gravity",
-    "Neptune, the farthest planet from the Sun in our solar system, is a distant ice giant shrouded in mystery. Its deep blue color comes from methane in its atmosphere, and it is known for its strong winds and large storms. Despite its remote location, Neptune continues to intrigue scientists as they seek to unravel the secrets of this distant world.",
+    "Neptune, the blue giant, is a distant and frigid world shrouded in methane clouds. Its vivid azure hue comes from methane absorbing red light, creating a striking contrast in the solar system. Neptune's atmosphere is marked by fierce winds, with storms raging across its surface, including the infamous Great Dark Spot. Despite its remote location, Neptune has a system of rings and moons, such as Triton, which exhibits geysers of nitrogen gas and hints at a dynamic and evolving world. Neptune's mysteries continue to intrigue scientists, prompting further exploration to uncover the secrets of this distant ice giant.",
     "neptune.jpg"
 )
 
@@ -124,7 +124,7 @@ export let pluto = new Planet (
     "-240 degrees Celsius",
     "-240 degrees Celsius",
     "0.06 times Earth's surface gravity",
-    "Pluto, once considered the ninth planet in our solar system, is now classified as a dwarf planet located in the distant Kuiper Belt. This icy world is composed mainly of rock and ice, with a thin atmosphere that freezes and collapses as it moves farther from the Sun. Pluto's status as a dwarf planet has sparked debates among astronomers and enthusiasts, highlighting the dynamic nature of scientific discovery.",
+    "Pluto, once considered the ninth planet, now resides in the Kuiper Belt as a dwarf planet, offering insights into the outer reaches of the solar system. Its surface is covered in nitrogen ice, with hints of complex terrain, including mountains and plains. Pluto's moon, Charon, is unusually large compared to its parent body, forming a binary system with shared gravitational influence. Beyond Charon, Pluto has a system of smaller moons, such as Nix and Hydra, adding to its intriguing characteristics. Despite its reclassification, Pluto continues to fascinate scientists and astronomers, prompting missions to explore its distant and icy realm.",
     "pluto.jpg"
 )
 
