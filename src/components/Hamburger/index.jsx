@@ -1,15 +1,20 @@
 import styles from './Hamburger.module.css'
 
-const Hamburger = ({changePage, closeHamburger}) => {
+const Hamburger = ({changePage, closeHamburger, isOpen, xHamburger}) => {
 
     const handleClick = (pageView) => {
         changePage(pageView)
         closeHamburger()
     }
 
+    const handleClickHamburger = () => {
+        xHamburger(false)
+    }
+
     return (
-        <div className={styles.hamburger}>
+        <div className={`${styles.hamburger} ${isOpen ? styles.open : ''}`}>
             <ul className={styles.hamburgerUl}>
+                <h3 onClick={handleClickHamburger}>X</h3>
                 <li onClick={() => handleClick(null)}>Home</li>
                 <li onClick={() => handleClick("solarSystem")}>Our Solar System</li>
                 <li onClick={() => handleClick("allPlanets")}>All Planets</li>
