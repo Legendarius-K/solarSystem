@@ -29,13 +29,14 @@
 }
 
 .secondLevel {
-    height: 0; /* Start with height 0 */
-    overflow: hidden; /* Hide overflowing content */
-    transition:  0.3s ease; /* Apply transition on height */
+    height: 0; 
+    overflow: hidden; 
+    transition:  0.7s ease; 
 }
 
 .secondLevelOpen {
     height: 100vh;
+    transition:  0.7s ease; 
 }
 
 .secondLevel li:hover {
