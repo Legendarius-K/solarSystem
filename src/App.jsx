@@ -25,7 +25,7 @@ console.log(pageView);
       <Nav backHome={setPageView} changePage={setPageView}/>
       { !pageView && <Homepage solarSystemToggle={setPageView}/> }
       { pageView === "solarSystem" && <SolarSystem solarSystemToggle={setPageView}/> }
-      { pageView === "allPlanets" && <AllPlanets /> }
+      { pageView === "allPlanets" && <AllPlanets choosePlanet={setPageView} /> }
       { pageView === "mercury" && <Planet {...mercury}/>}
       { pageView === "venus" && <Planet {...venus}/>}
       { pageView === "earth" && <Planet {...earth}/>}
@@ -41,3 +41,8 @@ console.log(pageView);
 }
 
 export default App
+
+// Add the sun
+// add embedded youtube videos for each planet
+// add embedded map in Sitemap page
+// add "Other Heavenly Bodies"

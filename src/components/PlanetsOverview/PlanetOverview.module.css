@@ -1,44 +1,55 @@
+.planetOverview {
+    width: 45%;
+    border: 2px solid rgb(71, 61, 38);
+    background-color: white;
+    border-radius: 3px;
+    margin: 2%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+
+.planetOverview:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
 .planetInfo {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 20px 0;
 }
 
 .planetInfo img {
-    width: 48%;
+    width: 100%;
     display: block;
     margin: auto;
-    border-radius: 3px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .planetInfo p {
-    width: 45%;
+    width: 90%;
     padding: 10px 0;
     margin: auto;
-    border-top: 1px solid rgb(71, 61, 38);
     border-bottom: 1px solid rgb(71, 61, 38);
 }
 
 .planetOverview h2 {
+    opacity: 1;
+    background-color: rgb(37, 60, 93);
+    color: rgb(210, 217, 239);
+    margin: 0 0 -20px 0;
+    padding: 5px;
     text-align: center;
     font-size: 2rem;
+    font-family: "tilt warp";
     text-transform: capitalize;
-    color: rgb(0, 30, 113);
 }
 
 @media screen and (max-width: 768px) {
     
-    .planetInfo {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .planetInfo p,
-    .planetInfo img {
+   .planetOverview {
         width: 90%;
-        margin: 20px;
-    }
+        margin: 25px;
+   }
 
    
 
