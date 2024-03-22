@@ -1,7 +1,7 @@
 import styles from './Planet.module.css'
 import { getImageURL } from '../../utils/functions';
 
-const Planet = ({name, order, distanceFromSun, size, composition, maxTemperature, minTemperature, gravity, info, image}) => {
+const Planet = ({name, order, distanceFromSun, size, composition, maxTemperature, minTemperature, gravity, info, image, youtubeURL}) => {
     return (
         <div className={`${styles.planet} ${styles[name]}`}>
             <img className={styles.planetImg} src={getImageURL(image)} alt={`An image of ${name}`} />
@@ -19,6 +19,11 @@ const Planet = ({name, order, distanceFromSun, size, composition, maxTemperature
                     <p><span>Minimum Temperature: </span>{minTemperature}</p>
                     <p><span>Gravity: </span>{gravity}</p>
                 </div>
+            </div>
+            <div className={styles.planetVideo} >
+                <iframe allowFullScreen
+                    src={youtubeURL}>
+                </iframe>
             </div>
         </div>
     )

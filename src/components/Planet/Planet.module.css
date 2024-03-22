@@ -46,6 +46,18 @@
     font-size: 0.8rem;
 }
 
+.planetVideo {
+    text-align: center;
+    width: 100%;
+}
+
+.planetVideo iframe {
+    width: 94%;
+    margin: 3%;
+    aspect-ratio: 8/5;
+    max-width: 900px;
+}
+
 .planetInfo,
 .planetDescription {
     

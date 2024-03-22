@@ -29,15 +29,17 @@ const Hamburger = ({changePage, closeHamburger, isOpen, xHamburger}) => {
                 <li onClick={() => handleClick("allPlanets")}>All Planets</li>
                 <li onClick={handleClickSecondLevel} >Planets &#x21a6;
                     <div className={`${styles.secondLevel} ${secondLevel ? styles.secondLevelOpen : ""}`}>
-                        <li onClick={() => handleClick("mercury")}>Mercury</li>
-                        <li onClick={() => handleClick("venus")}>Venus</li>
-                        <li onClick={() => handleClick("earth")}>Earth</li>
-                        <li onClick={() => handleClick("mars")}>Mars</li>
-                        <li onClick={() => handleClick("jupiter")}>Jupiter</li>
-                        <li onClick={() => handleClick("saturn")}>Saturn</li>
-                        <li onClick={() => handleClick("uranus")}>Uranus</li>
-                        <li onClick={() => handleClick("neptune")}>Neptune</li>
-                        <li onClick={() => handleClick("pluto")}>Pluto</li>
+                        <ul>
+                            <li onClick={() => handleClick("mercury")}>Mercury</li>
+                            <li onClick={() => handleClick("venus")}>Venus</li>
+                            <li onClick={() => handleClick("earth")}>Earth</li>
+                            <li onClick={() => handleClick("mars")}>Mars</li>
+                            <li onClick={() => handleClick("jupiter")}>Jupiter</li>
+                            <li onClick={() => handleClick("saturn")}>Saturn</li>
+                            <li onClick={() => handleClick("uranus")}>Uranus</li>
+                            <li onClick={() => handleClick("neptune")}>Neptune</li>
+                            <li onClick={() => handleClick("pluto")}>Pluto</li>
+                        </ul>
                     </div>
                 </li>
             </ul>
