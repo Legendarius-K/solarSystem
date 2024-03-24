@@ -10,7 +10,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: background-size 0.5s ease;
 }
+
+.zoomed {
+    background-size: 150%; /* Adjust the zoomed size as needed */
+  }
 
 .heroHome {
     background-image: url("../../assets/images/heroSpace.png");
