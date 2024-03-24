@@ -24,7 +24,7 @@ const Nav = ({ backHome, changePage }) => {
                 <img className={`${hamburgerOpen ? styles.spin : ''}`} src={hamburger} alt="hamburger" width="22px" height="22px" />
                 <h3>Menu</h3>
             </div>
-            {hamburgerOpen && <Hamburger changePage={changePage} closeHamburger={setHamburgerOpen} isOpen={hamburgerOpen} xHamburger={setHamburgerOpen} />}
+            { <Hamburger changePage={changePage} closeHamburger={setHamburgerOpen} isOpen={hamburgerOpen} xHamburger={setHamburgerOpen} /> }
         </nav>
     );
 };

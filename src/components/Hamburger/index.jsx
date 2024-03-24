@@ -8,6 +8,7 @@ const Hamburger = ({changePage, closeHamburger, isOpen, xHamburger}) => {
     const handleClick = (pageView) => {
         changePage(pageView)
         closeHamburger()
+        setSecondLevel(false)
     }
 
     const handleClickHamburger = () => {
@@ -18,7 +19,7 @@ const Hamburger = ({changePage, closeHamburger, isOpen, xHamburger}) => {
         setSecondLevel(!secondLevel)
     }
 
-
+    
     
 
     return (
