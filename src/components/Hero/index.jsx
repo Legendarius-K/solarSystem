@@ -8,8 +8,7 @@ const Hero = ({ headline, subheadline, heroClass }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      // Calculate the scale factor based on the scroll position
-      const newScale = 1 + scrollY * -0.003; // Adjust the multiplier to control the zoom speed
+      const newScale = 1 + scrollY * -0.0025; 
       setScale(newScale);
     };
 
@@ -22,7 +21,6 @@ const Hero = ({ headline, subheadline, heroClass }) => {
 
   return (
     <div className={`${styles.hero} ${styles[heroClass]}`}>
-      {/* Content inside the hero */}
       <h1 style={{ transform: `scale(${scale})` }}>{headline}</h1>
       <h2 style={{ transform: `scale(${scale})` }}>{subheadline}</h2>
       <ArrowMoon />

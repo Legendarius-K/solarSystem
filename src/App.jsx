@@ -8,6 +8,7 @@ import AllPlanets from './components/AllPlanets'
 import { planets } from './data/data'
 import { mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto } from './data/data'
 import './App.css'
+import NavBG from './components/NavBG'
 
 // const PlanetsArray = {
 //     mercury: mercury,
@@ -23,6 +24,7 @@ console.log(pageView);
   return (
     <>
       <Nav backHome={setPageView} changePage={setPageView}/>
+      <NavBG />
       { !pageView && <Homepage solarSystemToggle={setPageView}/> }
       { pageView === "solarSystem" && <SolarSystem solarSystemToggle={setPageView}/> }
       { pageView === "allPlanets" && <AllPlanets choosePlanet={setPageView} /> }

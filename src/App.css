@@ -25,6 +25,7 @@ body {
 
 
 #root {
+  /* background-image: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 60px); */
   display: flex;
   flex-direction: column;
 }

@@ -2,16 +2,20 @@
     height: 60px;
     width: 100%;
     font-family: "Tilt Warp";
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3%;
-    /* position: relative; */
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    transition: opacity .1s;
 }
 
-
+.scrolling {
+}
 
 .nav img {
     height: 70%;
