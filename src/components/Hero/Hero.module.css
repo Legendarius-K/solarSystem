@@ -34,52 +34,8 @@ h2 {
     opacity: 80%;
 }
 
-.arrowCircle {
-    aspect-ratio: 1/1;
-    width: 20%;
-    border: 1px solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: -50px;
-    max-width: 115px;
-    cursor: pointer;
-}
-
-.innerCircle {
-    box-sizing: content-box;
-    aspect-ratio: 1/1;
-    width: 85%;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(0, 0, 0);
-    transition: 400ms;
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
-    background-image: url("../../assets/images/moon.jpg");
-    background-size: cover;
-}
-
-.innerCircle:hover {
-    border-left: 3px solid rgb(32, 12, 255);
-    border-right: 3px solid rgb(32, 12, 255);
-    
-    /* background: linear-gradient(to bottom, rgb(82, 82, 236), rgb(199, 195, 219), rgb(246, 246, 250), white); */
-}
-
-
-
-
 @media screen and (min-width: 550px) {
-    
-    .arrowCircle {
-        width: 17%;
-        bottom: -58px;
-    }
+   
 
     .hero {
         min-height: 350px;
@@ -91,12 +47,7 @@ h2 {
 }
 
 @media screen and (min-width: 769px) {
-    
-    .arrowCircle {
-        width: 14%;
-        bottom: -68px;
-    }
-
+  
     .hero {
         min-height: 400px;
     }
