@@ -30,6 +30,7 @@ const Hamburger = ({ changePage, closeHamburger, isOpen, xHamburger }) => {
                 <h3 onClick={handleClickHamburger}>X</h3>
                 <li onClick={() => handleClick(null)}>Home</li>
                 <li onClick={() => handleClick("solarSystem")}>Our Solar System</li>
+                <li onClick={() => handleClick("sun")}>The Sun</li>
                 <li onClick={() => handleClick("allPlanets")}>All Planets</li>
                 <li onClick={handleClickSecondLevel}>Planets {secondLevel ? '\u21a5' : '\u21a6'}
                     {secondLevel && (

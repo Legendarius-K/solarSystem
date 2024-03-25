@@ -39,6 +39,13 @@ h2 {
     opacity: 80%;
 }
 
+.ufo {
+    width: 45px;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}
+
 @media screen and (min-width: 550px) {
    
 
@@ -60,10 +67,10 @@ h2 {
     .hero h1 {
         font-size: 3rem;
     }
-
-   
-
     
+    .ufo {
+        width: 60px;
+    }
 }
 
 @media screen and (min-width: 1025px) {

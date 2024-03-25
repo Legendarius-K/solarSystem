@@ -6,7 +6,7 @@ import SolarSystem from './components/SolarSystem'
 import Planet from './components/Planet'
 import AllPlanets from './components/AllPlanets'
 import { planets } from './data/data'
-import { mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto } from './data/data'
+import { mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto, sun } from './data/data'
 import './App.css'
 import NavBG from './components/NavBG'
 
@@ -28,6 +28,7 @@ console.log(pageView);
       { !pageView && <Homepage solarSystemToggle={setPageView}/> }
       { pageView === "solarSystem" && <SolarSystem solarSystemToggle={setPageView}/> }
       { pageView === "allPlanets" && <AllPlanets choosePlanet={setPageView} /> }
+      { pageView === "sun" && <Planet {...sun} youtubeURL={"https://www.youtube.com/embed/2HoTK_Gqi2Q?si=cO4o35k03UgIWNG-"} />}
       { pageView === "mercury" && <Planet {...mercury} youtubeURL={"https://www.youtube.com/embed/0KBjnNuhRHs?si=IgKLInpQmHpQ-9hG"} />}
       { pageView === "venus" && <Planet {...venus} youtubeURL={"https://www.youtube.com/embed/BvXa1n9fjow?si=RloEu56LaGBcdLj6"} />}
       { pageView === "earth" && <Planet {...earth} youtubeURL={"https://www.youtube.com/embed/HCDVN7DCzYE?si=CHgLEWQXfhDfI6L6"} />}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import styles from './Hero.module.css';
 import ArrowMoon from '../ArrowMoon';
+import ufo from '../../assets/images/ufo.svg'
 
 const Hero = ({ headline, subheadline, heroClass }) => {
   const [scale, setScale] = useState(1);
@@ -39,6 +40,15 @@ const Hero = ({ headline, subheadline, heroClass }) => {
         {subheadline}
       </motion.h2>
       <ArrowMoon />
+      <motion.img
+        initial={{ y: 0, x: 0, scale: 1 }} 
+        animate={{ y: -300, x: 320, scale: 0 }} 
+        transition={{ duration: 2, delay: 1 }}
+        className={styles.ufo}
+        src={ufo}
+        alt="ufo"
+        width="60px"
+      />
     </div>
   );
 };
