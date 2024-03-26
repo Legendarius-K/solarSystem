@@ -9,7 +9,7 @@ const Planet = ({name, order, distanceFromSun, size, composition, maxTemperature
                     <motion.h2
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
                     >{name}
                     </motion.h2>
             <div className={styles.planetFlex}>
@@ -17,14 +17,14 @@ const Planet = ({name, order, distanceFromSun, size, composition, maxTemperature
                     <motion.p
                         initial={{ opacity: 0, x: -175 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
                     >{info}
                     </motion.p>
                 </div>
                 <motion.div 
                     initial={{ opacity: 0, x: 175 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
                 className={styles.planetInfo}>
                     <p><span>Composition: </span>{composition}</p>
                     <p><span>Order: </span>{order}</p>

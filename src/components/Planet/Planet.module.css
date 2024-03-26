@@ -55,6 +55,7 @@
     margin: 3%;
     aspect-ratio: 8/5;
     max-width: 900px;
+    border: 10px solid rgb(0, 0, 0);
 }
 
 .mercury {
