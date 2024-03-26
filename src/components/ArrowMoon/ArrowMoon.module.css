@@ -29,6 +29,13 @@
     background-size: cover;
 }
 
+.spaceship {
+    rotate: 45deg;
+    align-self: flex-start;
+    justify-self: start;
+    margin: -30px;
+}
+
 .arrowCircle img {
     position: absolute;
     z-index: 10;
@@ -54,5 +61,5 @@
         width: 14%;
         bottom: -68px;
     }
-    
+
 }
