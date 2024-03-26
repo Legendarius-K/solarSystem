@@ -9,12 +9,12 @@ const PlanetOverview = ({ name, info, image, order, choosePlanet  }) => {
     }
 
     return (
-        <motion.div 
-            initial={{ opacity: 0}}
-            animate={{ opacity: 1}}
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-        onClick={handleClick} className={styles.planetOverview}>
-                <h2>{order}: {name}</h2>
+            onClick={handleClick} className={styles.planetOverview}>
+            <h2>{order}: {name}</h2>
             <div className={styles.planetInfo}>
                 <img src={getImageURL(image)} alt="planet image" />
                 <p>{info}</p>

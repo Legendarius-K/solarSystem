@@ -4,7 +4,6 @@
     color: black;
     text-align: center;
     flex-grow: 1;
-    
 }
 
 .homeInfoContainer {
@@ -24,7 +23,6 @@ span {
 .homeInfo p {
     padding-bottom: 20px;
     border-bottom: solid rgb(114, 60, 27);
-    
 }
 
 @media screen and (min-width: 769px) {
@@ -32,4 +30,5 @@ span {
     .homeInfoContainer {
         flex-direction:row
     }
+    
 }

@@ -1,6 +1,5 @@
 .planet {
     font-size: 0.9rem;
-    
 }
 
 .planet h2 {
@@ -56,11 +55,6 @@
     margin: 3%;
     aspect-ratio: 8/5;
     max-width: 900px;
-}
-
-.planetInfo,
-.planetDescription {
-    
 }
 
 .mercury {

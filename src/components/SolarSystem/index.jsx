@@ -17,12 +17,12 @@ const SolarSystem = ({solarSystemToggle}) => {
             <div className={styles.solarSystemContainer2}>
                 <Info classname={"solarSystemInfo"} headline="Order and Size" span={"The order of planets in our solar system, "} article="from closest to farthest from the Sun, is Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. This arrangement follows a pattern based on their distances from the Sun, known as the planetary order. Each planet differs significantly in size, with the gas giants—Jupiter and Saturn—dominating the system. Jupiter, the largest planet, is over 11 times wider than Earth and boasts a colossal mass exceeding that of all other planets combined. Saturn follows closely, renowned for its majestic rings that span vast distances around its equator. The terrestrial planets—Mercury, Venus, Earth, and Mars—are smaller and primarily composed of rock and metal. Earth, the only planet known to support life, sits comfortably within the habitable zone, fostering a diverse array of ecosystems. Understanding the sizes of these planets helps contextualize their significance within our solar system's dynamic landscape." />
             </div>
-                <div className={styles.planetVideo} >
-                    <iframe allowFullScreen
-                        src={"https://www.youtube.com/embed/libKVRa01L8?si=eeq2RuPgWKK-iBBj"}>
-                    </iframe>
+            <div className={styles.planetVideo} >
+                <iframe allowFullScreen
+                    src={"https://www.youtube.com/embed/libKVRa01L8?si=eeq2RuPgWKK-iBBj"}>
+                </iframe>
                 <ReadMoreBtn className={styles.readMoreBtn} pageView={null} solarSystemToggle={solarSystemToggle} />
-                </div>
+            </div>
         </div>
     )
 };

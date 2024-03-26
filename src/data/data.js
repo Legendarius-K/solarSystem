@@ -12,7 +12,7 @@ function Planet (name, order, distanceFromSun, size, composition, maxTemperature
 }
 
 export const sun = new Planet (
-    "Sun",
+    "the sun",
     "Central star",
     "At the center of the solar system",
     "1.39 million kilometers (radius)",
