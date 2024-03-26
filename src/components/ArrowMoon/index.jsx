@@ -4,16 +4,13 @@ import arrow from '../../assets/images/downarrow.png';
 import spaceship from '../../assets/images/spaceship.png';
 
 const ArrowMoon = () => {
-    const [arrowRotation, setArrowRotation] = useState(0);
-    const [innerCircleRotation, setInnerCircleRotation] = useState(0);
+    const [rotation, setRotation] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const arrowNewRotation = scrollY * 0.8; // Twice as fast rotation for arrowCircle
-            const innerCircleNewRotation = scrollY * 0.4; // Normal rotation for innerCircle
-            setArrowRotation(arrowNewRotation);
-            setInnerCircleRotation(innerCircleNewRotation);
+            const newRotation = scrollY * 0.5;
+            setRotation(newRotation);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -28,10 +25,11 @@ const ArrowMoon = () => {
     };
 
     return (
-        <div onClick={handleClick} className={styles.arrowCircle} style={{ transform: `rotate(${arrowRotation}deg)` }}>
+        <div onClick={handleClick} className={styles.arrowCircle} style={{ transform: `rotate(${rotation}deg)` }}>
             <img className={styles.spaceship} src={spaceship} alt="" />
-            <img src={arrow} alt="downarrow" width="30px" height="30px" />
-            <div className={`${styles.innerCircle} `} style={{ transform: `rotate(${innerCircleRotation}deg)` }}></div>
+            {/* Apply rotation style to the second img element */}
+            <img src={arrow} alt="downarrow" width="30px" height="30px" style={{ transform: `rotate(-${rotation}deg)` }} />
+            <div className={`${styles.innerCircle} `} style={{ transform: `rotate(${rotation}deg)` }}></div>
         </div>
     );
 };
