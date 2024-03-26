@@ -27,7 +27,7 @@ const Hero = ({ headline, subheadline, heroClass }) => {
                 style={{ scale: scale }}
                 initial={{ opacity: 0, y: 75 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.3 }}
+                transition={{ duration: 0.9, delay: 0.3 }}
             >
                 {headline}
             </motion.h1>
@@ -35,7 +35,7 @@ const Hero = ({ headline, subheadline, heroClass }) => {
                 style={{ scale: scale }}
                 initial={{ opacity: 0, y: 75 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.3 }}
+                transition={{ duration: 1.2, delay: 0.8 }}
             >
                 {subheadline}
             </motion.h2>
