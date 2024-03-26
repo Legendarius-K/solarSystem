@@ -1,6 +1,7 @@
 .solarSystem {
      flex-grow: 1;
      padding-bottom: 30px;
+     text-align: center;
 }
 
 .solarSystemContainer {
@@ -49,11 +50,10 @@ span {
     max-width: 900px;
 }
 
-
 @media screen and (min-width: 769px) {
     
     .solarSystemContainer {
         flex-direction:row
     }
-    
+
 }

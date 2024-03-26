@@ -14,6 +14,7 @@ const Hamburger = ({ changePage, closeHamburger, isOpen, xHamburger }) => {
         changePage(pageView);
         closeHamburger();
         setSecondLevel(false);
+        window.scrollTo({ top: 60, behavior: 'auto' });
     };
 
     const handleClickHamburger = () => {

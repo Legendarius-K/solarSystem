@@ -21,8 +21,8 @@ const SolarSystem = ({solarSystemToggle}) => {
                 <iframe allowFullScreen
                     src={"https://www.youtube.com/embed/libKVRa01L8?si=eeq2RuPgWKK-iBBj"}>
                 </iframe>
-                <ReadMoreBtn className={styles.readMoreBtn} pageView={null} solarSystemToggle={solarSystemToggle} />
             </div>
+                <ReadMoreBtn className={styles.readMoreBtn} pageView={null} solarSystemToggle={solarSystemToggle} />
         </div>
     )
 };

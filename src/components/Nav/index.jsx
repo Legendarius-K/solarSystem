@@ -14,6 +14,7 @@ const Nav = ({ backHome, changePage }) => {
     const handleClick = () => {
         backHome();
         setHamburgerOpen(false);
+        window.scrollTo({ top: 0, behavior: 'auto' });
     };
 
     return (

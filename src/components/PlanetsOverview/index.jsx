@@ -6,6 +6,7 @@ const PlanetOverview = ({ name, info, image, order, choosePlanet  }) => {
 
     const handleClick = () => {
         choosePlanet(name)
+        window.scrollTo({ top: 0, behavior: 'auto' });
     }
 
     return (
