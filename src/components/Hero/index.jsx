@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import styles from './Hero.module.css';
 import ArrowMoon from '../ArrowMoon';
 import ufo from '../../assets/images/ufo.svg';
-import cosmicReef from '../../assets/videos/Cosmic_Reef_trimmed.mp4'
-import cosmicReefWide from '../../assets/videos/Cosmic_Reef_trimmed.mov';
+import cosmicReef from '../../assets/videos/Cosmic_Reef_trimmed_small.mp4'
+import cosmicReefWide from '../../assets/videos/Cosmic_Reef_trimmed_small_wide.mp4';
 import mobileHero from '../../assets/images/heroSpace.png'
 
 const Hero = ({ headline, subheadline, heroClass }) => {
