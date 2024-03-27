@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from './Hero.module.css';
 import ArrowMoon from '../ArrowMoon';
 import ufo from '../../assets/images/ufo.svg';
-import cosmicReef from '../../assets/videos/Cosmic_Reef_trimmed.mp4';
+import cosmicReef from '../../assets/videos/Cosmic_Reef_trimmed.mp4'
 import cosmicReefWide from '../../assets/videos/Cosmic_Reef_trimmed.mov';
 import mobileHero from '../../assets/images/heroSpace.png'
 
@@ -18,7 +18,7 @@ const Hero = ({ headline, subheadline, heroClass }) => {
             setLargeScreen(screenWidth > 1025);
             setMobileScreen(screenWidth <= 500); 
         };
-
+ 
         window.addEventListener('resize', handleResize);
         handleResize();
 
