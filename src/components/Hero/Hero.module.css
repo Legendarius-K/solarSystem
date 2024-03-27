@@ -1,9 +1,10 @@
 .hero {
     color: white;
     background-size: cover;
-    height: 35%;
+    width: 100%;
+    /* height: 35%;
     max-height: 800px;
-    min-height: 350px;
+    min-height: 350px; */
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,16 +14,21 @@
     transition: background-size 0.5s ease;
 }
 
+.videoBG {
+    width: 140%;
+    position: relative;
+}
+
 .zoomed {
     background-size: 150%;
   }
 
 .heroHome {
-    background-image: url("../../assets/images/heroSpace.png");
+    /* background-image: url("../../assets/images/heroSpace.png"); */
 }
 
 .heroSolarSystem {
-    background-image: url("../../assets/images/solar-system-hero.jpeg");
+    /* background-image: url("../../assets/images/solar-system-hero.jpeg"); */
 }
 
 .hero h1 {
@@ -31,12 +37,17 @@
     font-weight: 900;
     font-family: "Tilt Warp";
     opacity: 80%;
+    position: absolute;
+    translate: 0 -90%;
 }
 
-h2 {
+.heroHome h2,
+.heroSolarSystem h2 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
     opacity: 80%;
+    position: absolute;
+    translate: 0% 80%;
 }
 
 .ufo {
@@ -56,6 +67,10 @@ h2 {
         font-size: 2.5rem;
     }
 
+    .videoBG {
+        width: 120%;
+    }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -72,16 +87,22 @@ h2 {
         width: 60px;
     }
 
+    .videoBG {
+        width: 110%;
+    }
+
 }
 
 @media screen and (min-width: 1025px) {
 
-    .hero {
-        min-height: 550px;
-    }
+    
 
     .hero h1 {
         font-size: 4rem;
+    }
+
+    .videoBG {
+        width: 100%;
     }
     
 }

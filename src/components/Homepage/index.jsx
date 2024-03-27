@@ -5,8 +5,10 @@ import HomeInfo from '../HomeInfo';
 const Homepage = ({solarSystemToggle}) => {
     return (
         <>
-            <Hero headline="Hubble Space Telescope" subheadline="Embark on a Journey of Discovery" heroClass="heroHome" />
-            <HomeInfo solarSystemToggle={solarSystemToggle}/>
+            <div className={styles.homePage}>
+                <Hero headline="Hubble Space Telescope" subheadline="Embark on a Journey of Discovery" heroClass="heroHome" />
+                <HomeInfo solarSystemToggle={solarSystemToggle}/>
+            </div>    
         </>
     )
 };

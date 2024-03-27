@@ -2,27 +2,41 @@ import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import styles from './Hero.module.css';
 import ArrowMoon from '../ArrowMoon';
-import ufo from '../../assets/images/ufo.svg'
+import ufo from '../../assets/images/ufo.svg';
+import cosmicReef from '../../assets/videos/Cosmic_Reef.mp4';
+import cosmicReefWide from '../../assets/videos/Cosmic_Reef.mov';
+
 
 const Hero = ({ headline, subheadline, heroClass }) => {
     const [scale, setScale] = useState(1);
-
+    const [largeScreen, setLargeScreen] = useState(false); 
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const newScale = 1 - scrollY * 0.0025;
-            setScale(newScale > 0 ? newScale : 0.01);
+        const handleResize = () => {
+            setLargeScreen(window.innerWidth > 1025);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+        handleResize();
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
+    console.log("largeScreen:", largeScreen);
+
     return (
         <div className={`${styles.hero} ${styles[heroClass]}`}>
+            {largeScreen && 
+                <video className={styles.videoBG} autoPlay muted loop>
+                    <source src={cosmicReefWide} type="video/mp4" />
+                </video>
+            }
+            {!largeScreen && 
+                <video className={styles.videoBG} autoPlay muted loop>
+                    <source src={cosmicReef} type="video/mp4" />
+                </video>
+            }
             <motion.h1
                 style={{ scale: scale }}
                 initial={{ opacity: 0, y: 75 }}

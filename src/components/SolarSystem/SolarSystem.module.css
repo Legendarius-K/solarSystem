@@ -1,7 +1,8 @@
 .solarSystem {
-     flex-grow: 1;
-     padding-bottom: 30px;
-     text-align: center;
+    flex-grow: 1;
+    padding-bottom: 30px;
+    text-align: center;
+    overflow-x: hidden;
 }
 
 .solarSystemContainer {
@@ -20,7 +21,7 @@
     text-align: center;
 }
 
-.solarSystem h2 {
+.solarSystemContainer h2 {
     padding-bottom: 20px;
     border-bottom: solid rgb(114, 60, 27);
 }
