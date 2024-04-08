@@ -5,18 +5,15 @@ import ArrowMoon from '../ArrowMoon';
 import ufo from '../../assets/images/ufo.svg';
 import cosmicReef from '../../assets/videos/Cosmic_Reef_trimmed_small.mp4'
 import cosmicReefWide from '../../assets/videos/Cosmic_Reef_trimmed_small_wide.mp4';
-import mobileHero from '../../assets/images/heroSpace.png'
 
 const Hero = ({ headline, subheadline, heroClass }) => {
     const [scale, setScale] = useState(1);
     const [largeScreen, setLargeScreen] = useState(false);
-    const [mobileScreen, setMobileScreen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
             const screenWidth = window.innerWidth;
             setLargeScreen(screenWidth > 1025);
-            setMobileScreen(screenWidth <= 500); 
         };
  
         window.addEventListener('resize', handleResize);
@@ -29,17 +26,18 @@ const Hero = ({ headline, subheadline, heroClass }) => {
 
     return (
         <div className={`${styles.hero} ${styles[heroClass]}`}>
-            {largeScreen &&
-                <video className={styles.videoBG} autoPlay muted loop>
-                    <source src={cosmicReefWide} type="video/webm" />
+            {
+                largeScreen &&
+                <video className={styles.videoBG} autoPlay muted loop playsInline>
+                    <source src={cosmicReefWide} />
                 </video>
             }
-            {!largeScreen && !mobileScreen &&
-                <video className={styles.videoBG} autoPlay muted loop>
-                    <source src={cosmicReef} type="video/webm" />
+            {
+                !largeScreen &&
+                <video className={styles.videoBG} autoPlay muted loop playsInline>
+                    <source src={cosmicReef} />
                 </video>
             }
-            {mobileScreen && <img className={styles.videoBG} src={mobileHero} alt="Mobile Hero image"/>}
             <motion.h1
                 style={{ scale: scale }}
                 initial={{ opacity: 0, y: 75 }}
