@@ -36,9 +36,8 @@ span {
 }
 
 .solarSystemImgContainer {
-    min-height: 250px;
+    min-height: 200px;
     background-image: url('../../assets/images/Solar-System-Details.jpg');
-    background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,14 +56,13 @@ span {
 }
 
 @media screen and (min-width: 769px) {
-    
+
     .solarSystemContainer {
         flex-direction: row
     }
-    
+
     .solarSystemImgContainer {
-        background-color: rgb(29, 31, 40);
-        min-height: 500px;
+        min-height: 400px;
     }
 
 }
@@ -72,7 +70,13 @@ span {
 @media screen and (min-width: 1025px) {
 
     .solarSystemImgContainer {
-        min-height: 800px;
+        min-height: 650px;
+        background-image: url('../../assets/images/Solar-System-Details.jpg');
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: rgb(29, 31, 40);
     }
 
 }
