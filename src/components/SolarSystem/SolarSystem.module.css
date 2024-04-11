@@ -35,13 +35,13 @@ span {
     border-bottom: solid rgb(114, 60, 27);
 }
 
-.solarSystemImgContainer {
+/* .solarSystemImgContainer {
     min-height: 200px;
     background-image: url('../../assets/images/Solar-System-Details.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-}
+} */
 
 .planetVideo {
     text-align: center;
@@ -61,15 +61,15 @@ span {
         flex-direction: row
     }
 
-    .solarSystemImgContainer {
+    /* .solarSystemImgContainer {
         min-height: 400px;
-    }
+    } */
 
 }
 
 @media screen and (min-width: 1025px) {
 
-    .solarSystemImgContainer {
+    /* .solarSystemImgContainer {
         min-height: 650px;
         background-image: url('../../assets/images/Solar-System-Details.jpg');
         background-attachment: fixed;
@@ -77,6 +77,6 @@ span {
         background-repeat: no-repeat;
         background-position: center center;
         background-color: rgb(29, 31, 40);
-    }
+    } */
 
 }

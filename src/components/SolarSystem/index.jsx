@@ -3,6 +3,14 @@ import Hero from '../Hero';
 import Info from '../Info';
 import solarSystemImage from "../../assets/images/Solar-System-Details.jpg"
 import ReadMoreBtn from '../ReadMoreBtn';
+import {
+    Magnifier,
+    GlassMagnifier,
+    SideBySideMagnifier,
+    PictureInPictureMagnifier,
+    MOUSE_ACTIVATION,
+    TOUCH_ACTIVATION
+} from "react-image-magnifiers";
 
 const SolarSystem = ({ solarSystemToggle }) => {
     return (
@@ -13,6 +21,13 @@ const SolarSystem = ({ solarSystemToggle }) => {
                 <Info classname={"solarSystemInfo"} span={"Welcome to our solar system, "} article={"a mesmerizing ensemble of planets, moons, asteroids, and comets orbiting around the Sun. At its heart lies the Sun, a dazzling star radiating energy, warmth, and light, around which eight planets gracefully dance in their respective orbits. From the fiery intensity of Mercury to the frozen landscapes of Neptune, each planet boasts its own unique features and mysteries waiting to be explored. Beyond the planets, countless moons, dwarf planets, and celestial bodies add to the splendor of our cosmic neighborhood. Join us on a journey through space and discover the wonders of our solar system."} />
                 <Info classname={"solarSystemInfo"} span={"Delving further into the intricacies of our solar system, "} article={"we uncover a wealth of marvels beyond the familiar planets. Moons, with their diverse landscapes and geological features, orbit their parent bodies, offering insights into the dynamics of planetary systems. Dwarf planets, such as Pluto, exist on the fringes, captivating astronomers with their enigmatic properties. Asteroids and comets, remnants of the early solar system, journey through space, occasionally intersecting with the paths of planets. Each celestial body tells a story of cosmic evolution and challenges our understanding of the universe. Join us on a cosmic odyssey as we unravel the mysteries of our solar system and beyond."} />
             </div>
+            <Magnifier
+                imageSrc={solarSystemImage}
+                imageAlt="Example"
+                mouseActivation="click"
+                touchActivation="click"
+                magnifierSize="50%" 
+            />
             <div className={styles.solarSystemImgContainer}>
             </div>
             <div className={styles.solarSystemContainer2}>
@@ -30,4 +45,3 @@ const SolarSystem = ({ solarSystemToggle }) => {
 
 export default SolarSystem
 
-{/* <img className={styles.solarSystemImage} src={solarSystemImage} alt="solar system order and sizes" width="500px" /> */}
