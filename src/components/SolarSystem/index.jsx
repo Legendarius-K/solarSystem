@@ -1,7 +1,6 @@
 import styles from './SolarSystem.module.css'
 import Hero from '../Hero';
 import Info from '../Info';
-import solarSystemImage from "../../assets/images/Solar-System-Details.jpg"
 import ReadMoreBtn from '../ReadMoreBtn';
 
 const SolarSystem = ({ solarSystemToggle }) => {
@@ -29,5 +28,3 @@ const SolarSystem = ({ solarSystemToggle }) => {
 };
 
 export default SolarSystem
-
-{/* <img className={styles.solarSystemImage} src={solarSystemImage} alt="solar system order and sizes" width="500px" /> */}

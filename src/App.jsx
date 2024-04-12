@@ -9,17 +9,10 @@ import NavBG from './components/NavBG'
 import { mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto, sun } from './data/data'
 import './App.css'
 
-// const PlanetsArray = {
-//     mercury: mercury,
-//     venus: venus,
-//     earth: earth,
-//     mars: mars,
-// }
-
 function App() {
 
     const [pageView, setPageView] = useState(null)
-    console.log(pageView);
+    
     return (
         <>
             <Nav backHome={setPageView} changePage={setPageView} />
@@ -43,8 +36,3 @@ function App() {
 }
 
 export default App
-
-// Add the sun
-// add embedded youtube videos for each planet
-// add embedded map in Sitemap page
-// add "Other Celestial Bodies"

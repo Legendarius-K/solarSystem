@@ -27,7 +27,6 @@ const ArrowMoon = () => {
     return (
         <div onClick={handleClick} className={styles.arrowCircle} style={{ transform: `rotate(${rotation}deg)` }}>
             <img className={styles.spaceship} src={spaceship} alt="" />
-            {/* Apply rotation style to the second img element */}
             <img src={arrow} alt="downarrow" width="30px" height="30px" style={{ transform: `rotate(-${rotation}deg)` }} />
             <div className={`${styles.innerCircle} `} style={{ transform: `rotate(${rotation}deg)` }}></div>
         </div>

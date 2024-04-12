@@ -2,16 +2,16 @@ import styles from './Planet.module.css'
 import { getImageURL } from '../../utils/functions';
 import { motion } from 'framer-motion'
 
-const Planet = ({name, order, distanceFromSun, size, composition, maxTemperature, minTemperature, gravity, info, image, youtubeURL}) => {
+const Planet = ({ name, order, distanceFromSun, size, composition, maxTemperature, minTemperature, gravity, info, image, youtubeURL }) => {
     return (
         <div className={`${styles.planet} ${styles[name]}`}>
             <img className={styles.planetImg} src={getImageURL(image)} alt={`An image of ${name}`} />
-                    <motion.h2
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                    >{name}
-                    </motion.h2>
+            <motion.h2
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+            >{name}
+            </motion.h2>
             <div className={styles.planetFlex}>
                 <div className={styles.planetDescription}>
                     <motion.p
@@ -21,11 +21,11 @@ const Planet = ({name, order, distanceFromSun, size, composition, maxTemperature
                     >{info}
                     </motion.p>
                 </div>
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, x: 175 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                className={styles.planetInfo}>
+                    className={styles.planetInfo}>
                     <p><span>Composition: </span>{composition}</p>
                     <p><span>Order: </span>{order}</p>
                     <p><span>Distance from the Sun: </span>{distanceFromSun}</p>

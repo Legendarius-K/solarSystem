@@ -60,7 +60,6 @@
 @media screen and (min-width: 550px) {
    
     .hero {
-        /* min-height: 350px; */
     }
 
     .hero h1 {
@@ -76,7 +75,6 @@
 @media screen and (min-width: 769px) {
   
     .hero {
-        /* min-height: 400px; */
     }
 
     .hero h1 {
@@ -94,8 +92,6 @@
 }
 
 @media screen and (min-width: 1025px) {
-
-    
 
     .hero h1 {
         font-size: 4rem;
